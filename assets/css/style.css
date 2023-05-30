@@ -1,0 +1,217 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blanco1: #e8ebf7;
+  --Blanco2: #acbed8;
+  --Amarillo: #fdd947;
+  --Negro: #000;
+  --Rojo: #d81e5b;
+  --Negro2: #2a2d34;
+  --Negro3: #252525;
+  --verde: #7fefbd;
+  --gris: #8a8a8a;
+}
+
+body {
+  background: var(--Negro);
+}
+/*INICIO DE SECCIONES*/
+
+header {
+  font-size: 16px;
+  width: 100%;
+  height: 200vh;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../img/fondo-head.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+/*FIN DE SECCIONES*/
+
+/*INICIO DE MEDIAS DE HEADER*/
+@media screen and (max-width: 767px) {
+  header {
+    font-size: 8px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header #cont-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header #cont-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    text-decoration: none;
+    color: #d81e5b;
+    width: 9em;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  header a:hover {
+    padding-left: 1em;
+    transition: all 0.3s;
+  }
+
+  header #link1 {
+    font-size: 5em;
+    text-decoration: none;
+    color: var(--Blanco2);
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  header {
+    font-size: 13px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  header #cont-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header #cont-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-left: 4em;
+  }
+
+  header a {
+    font-size: 5em;
+    text-decoration: none;
+    color: #d81e5b;
+    width: 9em;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  header a:hover {
+    padding-left: 1em;
+    transition: all 0.3s;
+  }
+
+  header #link1 {
+    font-size: 5em;
+    text-decoration: none;
+    color: var(--Blanco2);
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  header #cont-prec {
+    width: 40%;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    font-size: 20px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  header #cont-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 8em;
+  }
+
+  header #cont-link {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  header a {
+    font-size: 7em;
+    text-decoration: none;
+    color: #d81e5b;
+    width: 9em;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  header a:hover {
+    padding-left: 1em;
+    transition: all 0.3s;
+  }
+
+  header #link1 {
+    font-size: 7em;
+    text-decoration: none;
+    color: var(--Blanco2);
+  }
+
+  header #cont-prec {
+    width: 40%;
+  }
+
+  header #precentacion {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  header #precentacion span {
+    padding: 0%;
+    margin: 0%;
+    font-size: 6em;
+    color: var(--Rojo);
+  }
+
+  header #precentacion p {
+    padding: 0%;
+    margin: 0%;
+    font-size: 3em;
+    color: var(--gris);
+  }
+}
+
+/*FIN DE MEDIAS DE HEADER*/

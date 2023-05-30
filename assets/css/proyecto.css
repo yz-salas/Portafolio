@@ -1,0 +1,134 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blanco1: #e8ebf7;
+  --Blanco2: #acbed8;
+  --Negro: #000;
+  --Rojo: #d81e5b;
+  --gris: #8a8a8a;
+  --facebook: #0061ff;
+  --instagram: #f95738;
+  --WhatsApp: #04ba71;
+  --github: #8236fd;
+  --gmail: #fbbd0d;
+}
+
+body {
+  background: var(--Negro);
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    height: 100vh;
+    font-size: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  main #section {
+    width: 100%;
+    height: 100%;
+  }
+
+  main #cont-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+  }
+
+  main #cont-section p {
+    color: var(--Blanco2);
+    font-size: 6em;
+    width: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0.2em;
+    border-left: 10px solid var(--Rojo);
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  main {
+    width: 100%;
+    height: 100vh;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  main #section {
+    width: 100%;
+    height: 100%;
+  }
+
+  main #cont-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+  }
+
+  main #cont-section p {
+    color: var(--Blanco2);
+    font-size: 6em;
+    width: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0.2em;
+    border-left: 10px solid var(--Rojo);
+  }
+}
+
+@media screen and (min-width: 1024px){
+  main {
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  main #section {
+    width: 100%;
+    height: 100%;
+  }
+
+  main #cont-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+  }
+
+  main #cont-section p {
+    color: var(--Blanco2);
+    font-size: 6em;
+    width: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0.2em;
+    border-left: 10px solid var(--Rojo);
+  }
+}

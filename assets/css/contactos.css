@@ -1,0 +1,861 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blanco1: #e8ebf7;
+  --Blanco2: #acbed8;
+  --Negro: #000;
+  --Rojo: #d81e5b;
+  --gris: #8a8a8a;
+  --facebook: #0061ff;
+  --instagram: #f95738;
+  --WhatsApp: #04ba71;
+  --github: #8236fd;
+  --gmail: #fbbd0d;
+}
+
+body {
+  background: var(--Negro);
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    font-size: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    color: var(--Blanco2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  section #cont-int {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  section #cont-int span {
+    font-size: 8em;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  section #cont-int span::after {
+    content: "";
+    display: flex;
+    width: 50%;
+    height: 6px;
+    background: var(--Rojo);
+    border-radius: 20px;
+  }
+
+  section #cont-int a {
+    font-size: 7em;
+    text-decoration: none;
+    color: var(--Rojo);
+    display: flex;
+    transition: all 0.2s;
+    position: relative;
+    top: -50px;
+    left: 100px;
+  }
+
+  section #cont-int a:hover {
+    padding-left: 1em;
+    transition: all 0.2s;
+  }
+
+  section #text-contacto {
+    width: 100%;
+    padding-left: 10em;
+    height: 35em;
+  }
+
+  section #text-contacto p {
+    color: var(--Rojo);
+    font-size: 8em;
+  }
+
+  /*FIN INTRODUCCION*/
+
+  /*INICIO TEXTO DE CONTACTOS*/
+
+  section #contn-text {
+    width: 100%;
+    height: 100em;
+    display: flex;
+    padding: 10em;
+    flex-direction: column;
+    gap: 8em;
+  }
+
+  section p {
+    margin: 0%;
+    padding: 0;
+    font-size: 4em;
+  }
+
+  /*
+  ! INICIO DE REDES
+  */
+
+  section #cont-redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    background: var(--Blanco2);
+    position: relative;
+  }
+
+  section #redes-links {
+    height: 100em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5em;
+    padding: 6em;
+  }
+
+  section #cont-redes::before {
+    content: "networks";
+    display: flex;
+    font-size: 6em;
+    color: var(--Blanco2);
+    text-transform: uppercase;
+    position: relative;
+    top: -33px;
+    padding-left: 2em;
+  }
+
+  section #cont-iconos-redes {
+    display: none;
+  }
+
+  section #cont-link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section #cont-redes a {
+    font-size: 7em;
+    width: 70%;
+    text-decoration: none;
+    color: var(--Negro);
+    transition: all 0.2s;
+  }
+
+  section #facebook:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--facebook);
+  }
+
+  section #instagram:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--instagram);
+  }
+
+  section #WhatsApp:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--WhatsApp);
+  }
+
+  section #github:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--github);
+  }
+
+  section #gmail:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--gmail);
+  }
+
+  /*
+  ! FIN DE REDES
+  */
+
+  /*
+  ? INICIO DEL FORM
+  */
+
+  section #cont-form {
+    box-shadow: 15px 0px 25px var(--Negro);
+    width: 100%;
+    height: 120em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Rojo);
+    padding: 2em;
+  }
+
+  section form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  section #text-gmail {
+    font-size: 5em;
+    position: relative;
+  }
+
+  section #text-gmail::after {
+    content: "";
+    display: flex;
+    height: 4.5px;
+    width: 50%;
+    border-radius: 20px;
+    background: var(--github);
+    position: relative;
+  }
+
+  section #exampleInputEmail1 {
+    width: 15em;
+    background: var(--Rojo);
+    border: 0;
+    border-radius: 0;
+    border-bottom: 3px solid var(--Blanco2);
+  }
+
+  section #emailHelp {
+    font-size: 3em;
+    color: var(--Blanco2);
+  }
+
+  section #text-pass {
+    font-size: 5em;
+  }
+
+  section #text-pass::after {
+    content: "";
+    display: flex;
+    height: 4px;
+    width: 50%;
+    border-radius: 20px;
+    background: var(--github);
+    position: relative;
+  }
+
+  section #exampleInputPassword1 {
+    width: 15em;
+    background: var(--Rojo);
+    border: 0;
+    border-radius: 0;
+    border-bottom: 3px solid var(--Blanco2);
+  }
+
+  section #boton-form {
+    width: 10em;
+    font-size: 3em;
+    padding: 1em;
+    background: var(--Blanco2);
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--github);
+    transition: all 0.6s;
+    box-shadow: 0 0 40px var(--Negro);
+  }
+
+  section #boton-form:hover {
+    background: var(--Negro);
+    color: var(--github);
+    transition: all 0.6s;
+    box-shadow: 0 0 40px var(--Blanco2);
+  }
+
+  /*
+  ? FIN DEL FORM
+  */
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  main {
+    width: 100%;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    color: var(--Blanco2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  section #cont-int {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  section #cont-int span {
+    font-size: 8em;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  section #cont-int span::after {
+    content: "";
+    display: flex;
+    width: 50%;
+    height: 6px;
+    background: var(--Rojo);
+    border-radius: 20px;
+  }
+
+  section #cont-int a {
+    font-size: 7em;
+    text-decoration: none;
+    color: var(--Rojo);
+    display: flex;
+    transition: all 0.2s;
+    position: relative;
+    top: -50px;
+    left: 100px;
+  }
+
+  section #cont-int a:hover {
+    padding-left: 1em;
+    transition: all 0.2s;
+  }
+
+  section #text-contacto {
+    width: 100%;
+    padding-left: 10em;
+    height: 35em;
+  }
+
+  section #text-contacto p {
+    color: var(--Rojo);
+    font-size: 8em;
+  }
+
+  /*FIN INTRODUCCION*/
+
+  /*INICIO TEXTO DE CONTACTOS*/
+
+  section #contn-text {
+    width: 100%;
+    height: 100em;
+    display: flex;
+    padding: 10em;
+    flex-direction: column;
+    gap: 8em;
+  }
+
+  section p {
+    margin: 0%;
+    padding: 0;
+    font-size: 4em;
+  }
+
+  /*
+  ! INICIO DE REDES
+  */
+
+  section #cont-redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    background: var(--Blanco2);
+    position: relative;
+  }
+
+  section #redes-links {
+    height: 100em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5em;
+    padding: 6em;
+  }
+
+  section #cont-redes::before {
+    content: "networks";
+    display: flex;
+    font-size: 6em;
+    color: var(--Blanco2);
+    text-transform: uppercase;
+    position: relative;
+    top: -63px;
+    padding-left: 2em;
+  }
+
+  section #cont-link{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  section #icono-redes{
+    width: 350px;
+    position: relative;
+    top: -100px;
+    left: 300px;
+    transform:rotate(20deg);
+  }
+
+  section #cont-redes a {
+    font-size: 7em;
+    width: 70%;
+    text-decoration: none;
+    color: var(--Negro);
+    transition: all 0.2s;
+  }
+
+  section #facebook:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--facebook);
+  }
+
+  section #instagram:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--instagram);
+  }
+
+  section #WhatsApp:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--WhatsApp);
+  }
+
+  section #github:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--github);
+  }
+
+  section #gmail:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--gmail);
+  }
+
+  /*
+  ! FIN DE REDES
+  */
+
+  /*
+  ? INICIO DEL FORM
+  */
+
+  section #cont-form {
+    box-shadow: 15px 0px 25px var(--Negro);
+    width: 100%;
+    height: 120em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Rojo);
+    padding: 5em;
+  }
+
+  section form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  section #text-gmail {
+    font-size: 5em;
+    position: relative;
+  }
+
+  section #text-gmail::after {
+    content: "";
+    display: flex;
+    height: 4.5px;
+    width: 50%;
+    border-radius: 20px;
+    background: var(--github);
+    position: relative;
+  }
+
+  section #exampleInputEmail1 {
+    width: 30em;
+    background: var(--Rojo);
+    border: 0;
+    border-radius: 0;
+    border-bottom: 3px solid var(--Blanco2);
+  }
+
+  section #emailHelp {
+    font-size: 3em;
+    color: var(--Blanco2);
+  }
+
+  section #text-pass {
+    font-size: 5em;
+  }
+
+  section #text-pass::after {
+    content: "";
+    display: flex;
+    height: 4px;
+    width: 50%;
+    border-radius: 20px;
+    background: var(--github);
+    position: relative;
+  }
+
+  section #exampleInputPassword1 {
+    width: 30em;
+    background: var(--Rojo);
+    border: 0;
+    border-radius: 0;
+    border-bottom: 3px solid var(--Blanco2);
+  }
+
+  section #boton-form {
+    width: 10em;
+    font-size: 2em;
+    padding: 1em;
+    background: var(--Blanco2);
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--github);
+    transition: all 0.6s;
+    box-shadow: 0 0 40px var(--Negro);
+  }
+
+  section #boton-form:hover {
+    background: var(--Negro);
+    color: var(--github);
+    transition: all 0.6s;
+    box-shadow: 0 0 40px var(--Blanco2);
+  }
+
+  /*
+  ? FIN DEL FORM
+  */
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    width: 100%;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    color: var(--Blanco2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  section #cont-int {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  section #cont-int span {
+    font-size: 8em;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  section #cont-int span::after {
+    content: "";
+    display: flex;
+    width: 50%;
+    height: 6px;
+    background: var(--Rojo);
+    border-radius: 20px;
+  }
+
+  section #cont-int a {
+    font-size: 7em;
+    text-decoration: none;
+    color: var(--Rojo);
+    display: flex;
+    transition: all 0.2s;
+    position: relative;
+    top: -50px;
+    left: 100px;
+  }
+
+  section #cont-int a:hover {
+    padding-left: 1em;
+    transition: all 0.2s;
+  }
+
+  section #text-contacto {
+    width: 100%;
+    padding-left: 10em;
+    height: 35em;
+  }
+
+  section #text-contacto p {
+    color: var(--Rojo);
+    font-size: 8em;
+  }
+
+  /*FIN INTRODUCCION*/
+
+  /*INICIO TEXTO DE CONTACTOS*/
+
+  section #contn-text {
+    width: 100%;
+    height: 100em;
+    display: flex;
+    padding: 6em;
+    flex-direction: column;
+    gap: 8em;
+  }
+
+  section p {
+    margin: 0%;
+    padding: 0;
+    font-size: 4em;
+  }
+
+  /*
+  ! INICIO DE REDES
+  */
+
+  section #cont-redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    background: var(--Blanco2);
+    position: relative;
+  }
+
+  section #redes-links {
+    height: 90vh;
+    display: flex;
+    gap: 5em;
+    padding: 10em;
+  }
+
+  
+  section #cont-redes::before {
+    content: "networks";
+    display: flex;
+    font-size: 6em;
+    color: var(--Blanco2);
+    text-transform: uppercase;
+    position: relative;
+    top: -99px;
+    padding-left: 2em;
+  }
+
+  section #cont-link{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    gap: 1.5em;
+  }
+
+  section #cont-iconos-redes{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section #icono-redes{
+    width: 50em;
+    transform: rotate(30deg);
+  }
+
+
+  section #cont-redes a {
+    font-size: 7em;
+    width: 50%;
+    text-decoration: none;
+    color: var(--Negro);
+    transition: all 0.2s;
+  }
+
+  section #facebook:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--facebook);
+  }
+
+  section #instagram:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--instagram);
+  }
+
+  section #WhatsApp:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--WhatsApp);
+  }
+
+  section #github:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--github);
+  }
+
+  section #gmail:hover {
+    padding-left: 1.5em;
+    transition: all 0.2s;
+    color: var(--gmail);
+  }
+
+  @media (max-width: 2300px) {
+    section #cont-iconos-redes{
+      display: none;
+    }
+    
+  }
+
+  /*
+  ! FIN DE REDES
+  */
+
+  /*
+  ? INICIO DEL FORM
+  */
+
+  section #cont-form {
+    box-shadow: 15px 0px 25px var(--Negro);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Rojo);
+  }
+
+  section form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em;
+  }
+
+  section #text-gmail {
+    font-size: 5em;
+    position: relative;
+  }
+
+  section #text-gmail::after {
+    content: "";
+    display: flex;
+    height: 10px;
+    width: 20%;
+    border-radius: 20px;
+    background: var(--github);
+    position: relative;
+  }
+
+  section #exampleInputEmail1 {
+    width: 35em;
+    height: 3em;
+    background: var(--Blanco2);
+    border: 0;
+    border-radius: 0;
+    border-radius: 20px;
+  }
+
+  section #mb {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  section #emailHelp {
+    font-size: 3em;
+    color: var(--Blanco2);
+  }
+
+  section #text-pass {
+    font-size: 5em;
+  }
+
+  section #text-pass::after {
+    content: "";
+    display: flex;
+    height: 10px;
+    width: 20%;
+    border-radius: 20px;
+    background: var(--github);
+    position: relative;
+  }
+
+  section #exampleInputPassword1 {
+    width: 35em;
+    height: 3em;
+    background: var(--Blanco2);
+    border: 0;
+    border-radius: 0;
+    border-radius: 20px;
+  }
+
+  section #boton-form {
+    width: 10em;
+    font-size: 2em;
+    padding: 1em;
+    background: var(--Blanco2);
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--github);
+    transition: all 0.6s;
+    box-shadow: 0 0 40px var(--Negro);
+    border-radius: 55px;
+  }
+
+  section #boton-form:hover {
+    background: var(--Negro);
+    color: var(--github);
+    transition: all 0.6s;
+    box-shadow: 0 0 40px var(--Blanco2);
+  }
+
+  /*
+  ? FIN DEL FORM
+  */
+}
